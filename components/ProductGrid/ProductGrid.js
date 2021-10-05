@@ -5,8 +5,10 @@ import { ProductCard } from '../ProductCard'
 export default function ProductGrid() {
   return (
     <Wrapper>
-      {SHOES.map((product)=>(
-        <ProductCard key={product.slug} {...product}></ProductCard>
+      {SHOES.map((product) => (
+        <ProductWrapper key={product.slug}>
+          <ProductCard {...product}></ProductCard>
+        </ProductWrapper>
       ))}
     </Wrapper>
   )
@@ -17,4 +19,8 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   gap: 32px;
   margin-bottom: 110px;
+`
+const ProductWrapper = styled.div`
+  flex: 1;
+  min-width: 340px;
 `
