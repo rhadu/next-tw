@@ -1,0 +1,25 @@
+{
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components"
+    }
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "date-fns": "^2.25.0",
+    "next": "latest",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-feather": "^2.0.9",
+    "styled-components": "5.1.1"
+  },
+  "devDependencies": {
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.0.3",
+    "twin.macro": "^2.3.0"
+  }
+}
